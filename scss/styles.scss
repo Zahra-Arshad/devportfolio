@@ -34,7 +34,7 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #64d0e7;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -350,7 +350,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../images/lead-bg1.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -378,7 +378,7 @@ footer {
     }
 
     h2 {
-        color: lighten($base-color, 25%);
+        color: darken($base-color, 25%);
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
@@ -393,7 +393,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.8);
+    // background: rgba($base-color-hover, 0.8);
     z-index: 1;
 }
 
@@ -405,7 +405,7 @@ footer {
     text-align: center;
     z-index: 10;
     bottom: 15px;
-    color: #fff;
+    color: #64d0e7;
 
     span {
         cursor: pointer;
@@ -414,7 +414,7 @@ footer {
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        border: 3px solid lighten($base-color, 25%);
+        border: 3px solid $base-color;
         text-align:center;
     }
 
@@ -447,6 +447,7 @@ footer {
 
 #about {
     padding: 75px 15px;
+    text-align: center;
     border-bottom: 1px solid $border;
 
     h2 {
@@ -458,6 +459,13 @@ footer {
         margin: 0;
     }
 }
+
+.circular--square {
+    border-radius: 50%;
+    width: 300px;
+    max-width: 350px;
+    padding: 15px;
+  }
 
 /*
     --------------------------------
